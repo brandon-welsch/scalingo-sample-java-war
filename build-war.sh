@@ -1,12 +1,9 @@
 #!/bin/bash
 
-echo "### Create helloworld.war file"
+echo "### Create application.war file"
 echo
 echo "Calling jar"
 echo
-jar -cvf helloworld.war *.jsp WEB-INF
-echo
-echo "Moving helloworld.war to dist/ with option --FORCE"
-mv -f helloworld.war dist/
+jar -cvf application.war *.jsp src
 echo
 echo "Done"
